@@ -14,6 +14,10 @@ app.conf.update(timezone='Asia/Kathmandu')
 app.config_from_object(settings, namespace ='CELERY')
 
 #Celery Beat Setting
+app.conf.beat_scchedule = {
+    
+}
+
 
 app.autodiscover_tasks()
 
