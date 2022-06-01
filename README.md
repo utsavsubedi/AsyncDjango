@@ -28,9 +28,9 @@ If you don't have django installed for python 3 then run:
 And then:
 
     $ python3 -m django startproject \
-      --template=https://github.com/nikola-k/django-template/zipball/master \
+      --template=https://github.com/utsavsubedi/AsyncDjango.git \
       --extension=py,md \
-      <project_name>
+      AsyncDjango
       
       
 After that just install the local dependencies, run migrations, and start the server.
@@ -43,14 +43,14 @@ After that just install the local dependencies, run migrations, and start the se
 
 First clone the repository from Github and switch to the new directory:
 
-    $ git clone git@github.com/USERNAME/{{ project_name }}.git
-    $ cd {{ project_name }}
+    $ git clone git@github.com/utsavsubedi/AsyncDjango.git
+    $ cd AsyncDjango
     
 Activate the virtualenv for your project.
     
 Install project dependencies:
 
-    $ pip install -r requirements/local.txt
+    $ pip install -r requirements.txt
     
     
 Then simply apply the migrations:
